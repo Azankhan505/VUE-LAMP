@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue lamps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="hero">
+     <nav>
+        <img src="picture/menu.png" class="menu-img">
+        <img src="picture/logo.png" class="logo">
+        <ul>
+            <li><a href="">Latest</a></li>
+            <li><a href="">Modern</a></li>
+            <li><a href="">Contemporary</a></li>
+            <li><a href="">Affordable</a></li>
+        </ul>
+        <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+     </nav>
+
+     <div class="lamp-container">
+        <img src="picture/lamp.png" class="lamp">
+        <img src="picture/light.png" class="light" id="light">
+     </div>
+
+     <div class="text-container">
+        <h1>Latest<br>in Lighting</h1>
+        <br>
+        <p>This is the first lamp from our company. 
+       we're making a huge collection of modern lamps in all catagories from home use to office use.</p>
+    <a href="">CHECK ALL COLLECTION</a>
+    <div class="control">
+        <p>04</p>
+        <div class="line"><span></span></div>
+        <p>05</p>
+    </div>
+     </div>
+
+
+ </div>   
+
+<script>
+    var btn = document.getElementById("btn");
+    var light = document.getElementById("light");
+
+    function toggleBtn(){
+        btn.classList.toggle("active")
+        light.classList.toggle("on");
+
+    }
+</script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="heading">
+        <h1>About us</h1>
+        <p>The lamp was invented at least as early as 70,000 BCE.</p>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="picture/pexels-photo-6431888.webp" alt="">
+            </div>
+            <div class="about-content">
+                <h2>History of lamps</h2>
+                <p>lamp, device for producing illumination, originally a vessel containing 
+                a wick soaked in combustible material and subsequently such other 
+                light-producing instruments as gas and electric lamps.Originally it 
+                consisted of a hollowed-out rock filled with moss or 
+                some other absorbent material that was soaked with animal fat and ignited. 
+                In the Mediterranean area and the Middle East, the earliest lamp had a shell 
+                shape. Originally, actual shells were used, with sections cut out to provide 
+                space for the lighting area; later these were replaced by pottery, alabaster,
+                or metal lamps shaped to resemble their natural prototypes. Another basic early 
+                type of lamp, found in ancient Egypt and China, was the saucer lamp. Made of 
+                pottery or bronze, it was sometimes provided with a spike in the centre of the 
+                declivity to support the wick, which was used to control the rate of burning. 
+                Another version had a wick channel, which allowed the burning surface of the 
+                wick to hang over the edge. The latter type became common in Africa and spread 
+                into East Asia as well.</p>
+                <a href="" class="read-more">read more</a>
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>
+
